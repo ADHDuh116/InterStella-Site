@@ -1,339 +1,432 @@
 <!DOCTYPE html>
 <html>
-<meta
-  name="google, apple, prime-video, youtube, paramount, hulu, full screen browser for tesla, browser, full screen, tesla, xbox, tiktok, sling, hbo, reddit, facebook, disney plus, plex, peacock, snapchat, instagram, netflix, whatsapp, twitter">
- 
-<head>
- 
-  <title>InterStella</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-
-
-    /* replace black background with intended image*/
-    body {
-      
-      overflow: auto ;
-      background-attachment: fixed;
-      background-color: rgba(16, 16, 73, 0.915);
-      background-image: url(https://images3.alphacoders.com/133/1331117.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-right: 50px;
-      margin-left: 50px;
-      margin-bottom: auto;
-      
-    }
- 
-    @media screen and (max-width: 1920px) and (max-height: 1200px) {
- 
-      body,
-      input,
-      select,
-      text area {
- 
-        font-size: 50px;
- 
-      }
- 
-    }
- 
-
-    @media screen and (max-width: 1512px) and (max-height: 582px) {
- 
-      body,
-      input,
-      select,
-      text-area {
- 
-        font-size: 50px;
- 
-      }
- 
-    }
- 
-
-    @media screen and (max-width: 820px) and (max-height: 1180px) {
- 
-      body,
-      input,
-      select,
-      text-area  {
- 
-        font-size: 10px;
- 
-      }
- 
-    }
- 
-    @media screen and (max-width: 768px) and (max-height: 1024px) {
- 
-      body,
-      input,
-      select,
-      text-area {
- 
-        font-size: 10px;
-      }
- 
-    }
- 
-    @media screen and (max-width: 430px) and (max-height: 932px) {
- 
-      body,
-      input,
-      select,
-      text-area {
- 
-        font-size: 10px;
- 
-      }
- 
-    }
- 
-
-    @media screen and (max-width: 375px) and (max-height: 667px) {
- 
-      body,
-      input,
-      select,
-      text-area {
- 
-        font-size: 50px;
- 
-      }
-
-    }
-
-    #full_screen {
-      
-      background: transparent;
-      margin: 1px;
-      margin-top: 30px;
-      margin-bottom: 0px;
-      height: 75px;
-      width: 75px;
-      border-radius: 25px;
-      position: left;
-
-    }
- 
-    /* Style website title */
-    #InterStella {
- 
-      overflow: contain;
-      margin-top: 20px;
-      text-shadow: 0px 5px 25px #000000;
-      font-size: 100px;
-      font-family: Calibri, 'Trebuchet MS', sans-serif;
-      color: white;
-      flex-flow: wrap;
-      display: flex;
-      place-self: center;
-      justify-content: center;
-      text-align: center;
- 
-    }
-
-    .topnav {
- 
-      text-shadow: center-content; 
-      color: rgb(0, 0, 0);
-      flex-flow: wrap;
-      display: flex;
-      place-self: center;
-      justify-content: center;
-      text-align: center;
- 
-    }
     
-    /* Style the search box inside the navigation bar */
-    .topnav input[type=text] {
-      
-      
-      border-color: #b4b4b40e;
-      background-color:#63636310;
-      box-shadow: 0px 12px 30px rgba(3, 3, 3, 0.626);
-      margin-bottom: 50px;
-      flex-flow: wrap;
-      display: flex;
-      place-self: center;
-      justify-content: center;
-      place-content: center;
-      padding: 6px;
-      border-radius: 50px;
-      width: 500px;
-      align-self: center;
-      font-size: 17px;
-      
-    }
+    <title>InterStella</title>
+
     
-    #tesla {
+
+    <style>
+       
+      body {
+     
+        margin: 25px 250px 25px 250px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: rgb(2, 2, 45);
+        background-image: url(homescreen.jpeg);
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+       
+   
+      }
+   
+      body [id="applications"] {
+   
+          
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 250px;
+        flex-flow: wrap;
+        display: flex;
+        place-content: center;
+        justify-content: center;
+        min-width: 900pt;
+        max-width: 10000pt;
+   
+      }
+   
+      div[class="topnav"]  {
+   
+        box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+        margin-bottom: 50px;
+       
+   
+        /* functions container size */
+   
+        min-width: 1150px;
+        max-width: 2000px;
+        min-height: 80pt;
+        max-height: 80pt;
+   
+        /* functions container size */
+   
+        background-color: rgba(98, 97, 97, 0.39);
+        backdrop-filter: blur(30px);  
+        border-radius: 10px;
+        border-color: #a7acbe;
+        border-style: none;
+        flex-grow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+       
+      }
+   
+      body div[id="buttons"]  {
+   
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 30px;
+        margin-right:30px;
+        max-width: fit-content;
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+   
+      }
+   
+      body button[class="back"]  {
+   
+        margin-right: 2.5px;
+        height: 50pt;
+        width: 50pt;
+        background-color: rgba(0, 0, 0, 0.41);    
+        backdrop-filter: blur(10px);   
+        background-image: url("navigation/back-arrow.png");
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0);
+        border-color: rgba(17, 17, 17, 0.135);
+        border-style: solid;
+        border-radius: 10px;
+        width: 35px;
+        height: 35px;
+        background-image: url(back-button.svg);
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+   
+      }
+   
+      body button[class="forward"]  {
  
-      text-shadow: 0px 5px 25px #000000be;
-      break-after: right;
-      font-size: 30px;
-      font-family: Calibri, 'Trebuchet MS', sans-serif;
-      color: white;
-      flex-flow: wrap;
-      display: flex;
-      place-self: center;
-      justify-content: center;
-      text-align: center;
- 
-    }
- 
-    #applications {
- 
-      /*centered apps with header*/
- 
-      font-size: xx-large;
-      color: rgb(245, 245, 245);
-      flex-flow: wrap;
-      display: flex;
-      place-content: center;
- 
-    }
- 
-    a {
- 
-      /*app icon margins*/
-      margin: 30px 30px 30px 30px;
-      border-radius: 10px 10px 10px 10px;
-      flex-wrap: flex;
-      display: wrap;
-      place-content: center;
-      justify-content: center;
- 
-    }
- 
-    img {
+        
+        margin-left: 2.5px;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.41);    
+        backdrop-filter: blur(10px);       
+        border-color: rgba(30, 30, 30, 0.135);
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0);
+        width: 35px;
+        height: 35px;
+        background-image: url(forward-button.svg);
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+   
+      }
+   
+      /* Navigation bar style */
+      body input[type="text"] {
+       
+        color: rgba(255, 255, 255, 0.564);
+        min-width: 800px;
+        max-width: 1000px;
+        
+        min-height: 30px;
+        max-height: 30px;
+        margin-top: 34px;
+        border-color: rgba(13, 13, 13, 0.065);
+        border-style: solid;
+        background-color: rgba(0, 0, 0, 0.41);   
+        backdrop-filter: blur(100px);      
+        border-radius: 10px;
+        font-size: 17px;
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+     
+      }
+    
+   
+      input::placeholder  {
+        color: rgba(255, 255, 255, 0.564);
+        border-radius: 5px;
+
+      }
+   
+      button[id="donate"] {
+        margin-top: 1px;
+        color: rgba(255, 255, 255, 0.564);
+        font-size: 11px;
+        font-style: blur();
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.41);    
+        backdrop-filter: blur(10px);         
+        border-color: rgba(17, 17, 17, 0.135);
+        border-style: solid;
+        border-radius:10px; 
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+   
+      }
+   
+       
+      @media screen and (max-width: 1920px) and (max-height: 1200px) {
+   
+        body,
+        input,
+        select,
+        text area {
+   
+          font-size: 50px;
+   
+        }
+   
+      }
+   
+      @media screen and (max-width: 1512px) and (max-height: 582px) {
+   
+        body,
+        input,
+        select,
+        text-area {
+   
+          font-size: 50px;
+   
+        }
+   
+      }
+   
+      @media screen and (max-width: 820px) and (max-height: 1180px) {
+   
+        body,
+        input,
+        select,
+        text-area  {
+   
+          font-size: 10px;
+   
+        }
+   
+      }
+   
+      @media screen and (max-width: 768px) and (max-height: 1024px) {
+   
+        body,
+        input,
+        select,
+        text-area {
+   
+          font-size: 10px;
+        }
+   
+      }
+   
+      @media screen and (max-width: 430px) and (max-height: 932px) {
+   
+        body,
+        input,
+        select,
+        text-area {
+   
+          font-size: 10px;
+   
+        }
+   
+      }
+   
+      @media screen and (max-width: 375px) and (max-height: 667px) {
+   
+        body,
+        input,
+        select,
+        text-area {
+       
+          font-size: 50px;
+       
+        }
+   
+      }
+   
+      /* Style website title */
+      body h1 {
+     
+        text-shadow: 0px 15px 25px #000000;
+        font-size: 80pt;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        flex-flow: wrap;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        min-width: 100px;
+        max-width: 1000px;
+   
+      }
+   
+      #tesla {
+       
+        text-shadow: 0px 10px 12px #000000;
+        font-size: 20pt;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        flex-flow: wrap;
+        display: flex;
+        place-content: center;
+        justify-content: center;
+   
+      }
+   
+      a {
+        color: rgba(0, 255, 255, 0);
+        /*app icon margins*/
+        margin: 30px 30px 30px 30px;
+        border-radius: 10px 10px 10px 10px;
+        flex-flow: flex;
+        display: wrap;
+        place-content: center;
+        justify-content: center;
+   
+      }
+   
+      img {
+       
+        box-shadow: 0px 20px 20px 0px #00000099;
+        border-radius: 35px;
+        /*app touch areas margin*/
+        margin: 1px 1px 1px 1px;
+        width: 120px;
+        height: 120px;
       
-      box-shadow: 0px 29px 39px #000000;
-      border-radius: 35px 35px 35px;
-      /*app touch areas margin*/
-      margin: 1px 1px 1px 1px;
-      width: 120px;
+       
+      }
+      
+   
+    </style>
 
- 
-    }
-
-
-  </style>
- 
-</head>
- 
 <body>
-
-  <div id="full screen">
-    <a href="https://www.youtube.com/redirect?q">
-      <img class="full screen" id="full_screen" src="Full Screen Icon.png"/></a>
-  </div>
-
-  <h1 id="InterStella"><em>InterStella</em>
-    <div id="tesla">&nbsp<em>for Tesla</em></div>
+    
+  <h1 id="InterStella">
+    <em id="InterStella">InterStella</em>
+    <em id="tesla">for Tesla</em>
   </h1>
+   
+  <div class="topnav">  
 
-  <div class="topnav">
-    <input type="text" placeholder="Search...""></input>
-  </div>
+    <div id="buttons">
 
-  <div id="applications">
+        <button class="back" id="back" img src=/navigation/back-arrow.png></button>
+        <button class="forward" id="forward"></button>
+        
+    </div>
+       
+    <div id="search">
 
-    <a id="chrome" href=https://www.youtube.com/redirect?q=https://google.com>
+      <input type="text" placeholder="Search..."></input>
+      
+    
+    </div>
+
+    
+    <a id="donate" href="google.com"><button id="donate">Support the Creator</button></a>
+    
+
+  </div id="topnav">
+   
+   
+  <div id="applications" class="icon">
+    
+    
+    <a id="chrome" href=https://www.youtube.com/redirect?q=https://google.com target="_parent">
       <img
-        src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/20/55/6a/20556ad6-e251-b4f8-2c23-08826e6b12b4/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-85-220.png/350x350.png? "/></a>
-
+      src="icons/chrome.png"></a>
+      
     <a id="apple-tv" href=https://www.youtube.com/redirect?q=https://tv.apple.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/96/70/ed/9670eddf-db2b-1177-98ed-ae305660d3bc/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp /></a>
+        <img
+        src="icons/appletv.png"/></a>
 
-    <a id="disney" href=https://www.youtube.com/redirect?q=https://netflix.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/76/88/74/76887494-e98f-55cf-c69d-ab12bd75a825/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-0-85-220.png/434x0w.webp /></a>
+    <a id="netflix" href=https://www.youtube.com/redirect?q=https://netflix.com>
+        <img
+        src="icons/netflix.png"/></a>
 
     <a id="hulu" href=https://www.youtube.com/redirect?q=https://hulu.com>
-      <img
-        src=https://play-lh.googleusercontent.com/4whGAVjZGrrlNxzheKAfBXrxggtyAb4euWLeQI8fDfVfdnFEZjE0DZTJ8DKoh64pqcIa=w240-h480-rw /></a>
+        <img
+        src="icons/hulu.png"/></a>
 
     <a id="disneyplus" href=https://www.youtube.com/redirect?q=https://disneyplus.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/c0/cc/5c/c0cc5cb9-c291-6b1c-e9b9-7d2e99edee4f/AppIcon-0-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.webp /></a>
+        <img
+        src="icons/disney.png"/></a>
 
-    <a id="hbo"
-      href=https://www.youtube.com/redirect?q=https://www.max.com/?utm_id=sa%7c71700000109152733%7c58700008392270142%7cp76407894054&gclid=EAIaIQobChMI4a2L6pWdggMV7DjUAR0OowDGEAAYASAAEgJIQfD_BwE&gclsrc=aw.ds>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/36/0a/6b/360a6bfe-636a-5c94-0bf7-dcb22859a3e3/AppIcon-1x_U007epad-0-85-220.png/460x0w.webp></a>
+    <a id="hbo" href=https://www.youtube.com/redirect?q=https://www.max.com/?utm_id=sa%7c71700000109152733%7c58700008392270142%7cp76407894054&gclid=EAIaIQobChMI4a2L6pWdggMV7DjUAR0OowDGEAAYASAAEgJIQfD_BwE&gclsrc=aw.ds>
+        <img
+        src="icons/max.png"></a>
 
     <a id="paramount" href=https://www.youtube.com/redirect?qhttp://127.0.0.1:3000/Users/samuelsetar/InterStella.html>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/17/ac/f6/17acf615-4b1a-ab31-4154-5cc93b38bb30/P_U002bINTLAppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp /></a>
+        <img
+        src="icons/paramount.png"/></a>
 
     <a id="peacock" href=https://www.youtube.com/redirect?q=https://peacocktv.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/21/58/c7/2158c73c-20d4-7579-df29-aa97cebfe7a5/AppIcon-1x_U007epad-0-0-85-220.png/350x350.png /></a>
+        <img
+        src="icons/peacock.png"/></a>
 
     <a id="prime" href=https://www.youtube.com/redirect?q=https://primevideo.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/dd/16/a2/dd16a273-57ae-a933-1b71-b19c96ce4cfc/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/350x350.png? /></a>
+        <img
+        src="icons/prime.png"/></a>
 
     <a id="plex" href=https://www.youtube.com/redirect?q=https://plex.tv>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4e/73/7c/4e737c18-8f2e-1905-ceec-b1a866b7bd7f/default-dark-1x_U007emarketing-0-7-0-sRGB-85-220.png/434x0w.webp /></a>
+        <img
+        src="icons/plex.png"/></a>
 
     <a id="starz"
-      href=https://www.youtube.com/redirect?q=hhttps://www.starz.com/us/en/buy?gclid=CjwKCAjw15eqBhBZEiwAbDomEmLjAojB8Ph-XT29Axz8HR7haf7bIAA8d5LTS_rB72Ngt-OOMNzU3RoCStsQAvD_BwE&gclsrc=aw.ds&utm_campaign=8545672057_650453235758_kwd-94664120&utm_source=google>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/24/41/82/244182d6-8fa2-55b2-42a1-364dd808aa14/AppIcon-0-0-1x_U007epad-0-0-85-220.png/460x0w.webp /></a>
+        href=https://www.youtube.com/redirect?q=hhttps://www.starz.com/us/en/buy?gclid=CjwKCAjw15eqBhBZEiwAbDomEmLjAojB8Ph-XT29Axz8HR7haf7bIAA8d5LTS_rB72Ngt-OOMNzU3RoCStsQAvD_BwE&gclsrc=aw.ds&utm_campaign=8545672057_650453235758_kwd-94664120&utm_source=google>
+        <img
+        src="icons/starz.png"/></a>
 
-    <a id="sling" href=https://www.youtube.com/redirect?q=https://www.sling.com />
+    <a id="sling" href=https://www.youtube.com/redirect?q=https://www.sling.com>
     <img
-      src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/52/d9/4e/52d94ec8-fd21-960a-5a1b-5bce54b9688f/AppIcon-1x_U007emarketing-0-7-0-85-220.png/350x350.png? /></a>
+        src="icons/sling.png"/></a>
 
-    <a id="facebook" href=https://www.youtube.com/redirect?q=https://www.facebook.com />
+    <a id="facebook" href=https://www.youtube.com/redirect?q=https://www.facebook.com>
     <img
-      src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/29/e8/09/29e809fd-ccd5-c890-88ff-4ad042fcee84/Icon-Production-0-1x_U007emarketing-0-7-0-85-220-0.png/460x0w.webp /></a>
+        src="icons/facebook.png"/></a>
 
-    <a id="facebook messenger" href=https://www.messenger.com/ />
+    <a id="messenger" href=https://www.messenger.com>
     <img
-      src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/26/d5/1a/26d51ab5-d193-7471-a12c-33b3e5441ec4/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220-0.png/460x0w.webp /></a>
+        src="icons/messenger.png"/></a>
 
     <a id="instagram"
-      href=https://www.youtube.com/redirect?q=https://www.youtube.com/redirect?q=https://www.instagram.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/fc/92/ca/fc92ca83-b774-d5d0-c0f3-068b1bd5b31e/Prod-0-1x_U007emarketing-0-7-0-85-220-0.png/460x0w.webp /></a>
+        href=https://www.youtube.com/redirect?q=https://www.youtube.com/redirect?q=https://www.instagram.com>
+        <img
+        src="icons/instagram.png"/></a>
 
-    <a id="pintrest" href=https://www.youtube.com/redirect?q=https://www.pinterest.com/>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/24/fd/25/24fd25af-bb26-79e9-a1d4-b462825676f5/AppIcon-0-1x_U007emarketing-0-6-0-0-85-220.png/460x0w.webp /></a>
+    <a id="pintrest" href=https://www.youtube.com/redirect?q=https://www.pinterest.com>
+        <img
+        src="icons/pintrest.png"/></a>
 
-    <a id="reddit" href=https://www.youtube.com/redirect?q=https://www.reddit.com />
+    <a id="reddit" href=https://www.youtube.com/redirect?q=https://www.reddit.com>
     <img
-      src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/4f/8e/1d/4f8e1d9c-ca82-a24d-cfa5-ecfe42d0a656/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp /></a>
+        src="icons/reddit.png"/></a>
 
     <a id="snapchat" href=https://www.youtube.com/redirect?q=https://www.snapchat.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/dc/da/29/dcda297a-0e98-7742-d124-97c06ac4b9f8/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.png?></a>
+        <img
+        src="icons/snapchat.png"></a>
 
     <a id="tiktok" href=https://www.youtube.com/redirect?q=https://www.tiktok.com/en>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/3e/01/1e/3e011e7a-14dc-d31b-3dc3-e9e05eef2fd5/AppIcon_TikTok-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/350x350.png? /></a>
+        <img
+        src="icons/tiktok.png"/></a>
 
-    <a id="threads" href="https://www.threads.net/login">
-      <img 
-        src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/5d/82/52/5d82529a-46ca-dad4-3591-044868c9294f/Prod-0-1x_U007emarketing-0-7-0-sRGB-85-220-0.png/350x350.png?"/></a>
+    <a id="threads" href=https://www.threads.net/login>
+        <img
+        src="icons//threads.png"/></a>
     
     <a id="x" href=https://www.youtube.com/redirect?q=https://www.twitter.com>
-      <img
-        src=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/4d/4b/06/4d4b0670-43cb-0ff1-3e72-a725057cdac8/ProductionAppIcon-1x_U007emarketing-0-7-0-0-0-85-220.png/460x0w.webp /></a>
+        <img
+        src="icons/x.png"/></a>
 
     <a id="whatsapp" href=https://www.youtube.com/redirect?q=https://web.whatsapp.com />
-    <img
-      src=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/2b/00/46/2b0046fb-e756-b43f-7676-dfd9cb8871d2/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp /></a>
+      <img src="icons/whatsapp.png"/>
+    </a>
 
   </div>
- 
+
 </body>
- 
+
 </html>
- 
